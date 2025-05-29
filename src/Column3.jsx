@@ -17,41 +17,53 @@ function Column3() {
         <h5>Graphic tools</h5>
         <div className="soft-skill">
           <img src={ps} className="psdlogo" alt="photoshop logo psd adobe" />
-          <div className="bar psd-bar"></div>
-          <div className="pro-bar psd-pro-bar"></div>
-          <p className="label-soft-skill psd">photoshop</p>
+          <div className="bar-wrapper">
+            <div className="bar psd-bar"></div>
+            <div className="pro-bar psd-pro-bar"></div>
+            <p className="label-soft-skill psd">photoshop</p>
+          </div>
         </div>
         <div className="soft-skill">
           <img src={ai} className="ailogo" alt="illustrator logo ai adobe" />
-          <div className="bar ai-bar"></div>
-          <div className="pro-bar ai-pro-bar"></div>
-          <p className="label-soft-skill ai">illustrator</p>
+          <div className="bar-wrapper">
+            <div className="bar ai-bar"></div>
+            <div className="pro-bar ai-pro-bar"></div>
+            <p className="label-soft-skill ai">illustrator</p>
+          </div>
         </div>
         <div className="soft-skill">
           <img src={id} className="idlogo" alt="indesign logo id adobe" />
-          <div className="bar id-bar"></div>
-          <div className="pro-bar id-pro-bar"></div>
-          <p className="label-soft-skill id">indesign</p>
+          <div className="bar-wrapper">
+            <div className="bar id-bar"></div>
+            <div className="pro-bar id-pro-bar"></div>
+            <p className="label-soft-skill id">indesign</p>
+          </div>
         </div>
         <h5>Video tools</h5>
         <div className="soft-skill">
           <img src={pr} className="prlogo" alt="premiere logo pr adobe" />
-          <div className="bar pr-bar"></div>
-          <div className="pro-bar pr-pro-bar"></div>
-          <p className="label-soft-skill pr">Premiere</p>
+          <div className="bar-wrapper">
+            <div className="bar pr-bar"></div>
+            <div className="pro-bar pr-pro-bar"></div>
+            <p className="label-soft-skill pr">Premiere</p>
+          </div>
         </div>
         <div className="soft-skill">
           <img src={ae} className="aelogo" alt="after effects logo ae adobe" />
-          <div className="bar ae-bar"></div>
-          <div className="pro-bar ae-pro-bar"></div>
-          <p className="label-soft-skill ae">After Effects</p>
+          <div className="bar-wrapper">
+            <div className="bar ae-bar"></div>
+            <div className="pro-bar ae-pro-bar"></div>
+            <p className="label-soft-skill ae">After Effects</p>
+          </div>
         </div>
         <h5>Audio tools</h5>
         <div className="soft-skill">
           <img src={live} className="ablogo" alt="ableton live logo" />
-          <div className="bar live-bar"></div>
-          <div className="pro-bar live-pro-bar"></div>
-          <p className="label-soft-skill ab">Ableton</p>
+          <div className="bar-wrapper">
+            <div className="bar live-bar"></div>
+            <div className="pro-bar live-pro-bar"></div>
+            <p className="label-soft-skill ab">Ableton</p>
+          </div>
         </div>
         <p className="extra-info">
           I know this bar system might seem a bit outdated to indicate any skill... But it captures the way my skills fluctuate with my focus and each project.
