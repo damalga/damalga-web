@@ -62,8 +62,7 @@ function Column2() {
                 <del>Low level</del> Beginner in...<br></br>
                 everything, except giving up.<br></br>
                 Full coding energy.<br></br>
-                <a className="link" href="https://github.com/damalga" target="_blank">Github</a>, <a className="link" href="https://bitbucket.org/damalga/" target="_blank">Bitbucket</a> and <br></br>
-                <a className="link" href="https://stackoverflow.com/users/9181614/damalga" target="_blank">Stackoverflow</a>. Ready to fuse design and tech with creativity and code.
+                <a className="link" href="https://github.com/damalga" target="_blank">Github</a> and <a className="link" href="https://bitbucket.org/damalga/" target="_blank">Bitbucket</a>. Ready to fuse design and tech with creativity and code.
               </p>
             </div>
           </div>
