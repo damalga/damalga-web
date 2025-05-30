@@ -9,15 +9,17 @@ import Header from './Header'
 import Resume from './Resume'
 import Footer from './Footer'
 
-import './assets/stylessheets/css/style.css'
+import './assets/styles/base.scss'
 
-ReactDOM.createRoot(document.getElementById('portfolio')).render(
+ReactDOM.createRoot(document.getElementById("app")).render(
   <React.StrictMode>
-    <Cursor />
     <Canvas />
-    <Switch />
-    <Header />
-    <Resume />
-    <Footer />
-  </React.StrictMode>
-)
+    <div id="portfolio">
+      <Cursor />
+      <Switch />
+      <Header />
+      <Resume />
+      <Footer />
+    </div>
+  </React.StrictMode>,
+);

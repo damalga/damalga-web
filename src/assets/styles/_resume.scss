@@ -48,16 +48,16 @@
                 width: 50px;
                 height: 24px;
                 svg.moon,
-                svg.sun{
+                svg.sun {
                     color: $white;
                     z-index: 1;
                     position: relative;
                 }
-                svg.moon{
+                svg.moon {
                     top: 2px;
                     left: 4px;
                 }
-                svg.sun{
+                svg.sun {
                     top: 2px;
                     right: -6px;
                 }
@@ -65,7 +65,7 @@
                     opacity: 0;
                     width: 0;
                     height: 0;
-                    &:checked+.slider:before {
+                    &:checked + .slider:before {
                         transform: translateX(26px);
                     }
                 }
@@ -96,7 +96,6 @@
 
         .edu,
         .work {
-
             .school,
             .job {
                 display: flex;
@@ -143,7 +142,6 @@
                 margin-bottom: 0;
 
                 .front-end-icons {
-
                     .css,
                     .node,
                     .git {
@@ -192,81 +190,76 @@
     }
 
     .col-3 {
-        h5 {
-            margin-bottom: 0;
-        }
         .soft-skills {
             margin-bottom: 1.6rem;
-            .bar,
-            .pro-bar {
-                height: 1.2em;
-            }
-            .bar {
-                width: 100%;
-                border: 0.05em solid #000;
-            }
-            .pro-bar {
-                width: 85%;
-                background: #000;
-                position: relative;
-                bottom: 1.2em;
-                animation: fluctuate 6s infinite ease-in-out;
-                transform-origin: left;
-            }
+
             .soft-skill {
-                position: relative;
-                bottom: 0.8em;
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 1.6rem;
+
                 img {
-                    width: 15%;
+                    width: 40px;
+                    height: auto;
+                    flex-shrink: 0;
+                    margin-top: 0.2em;
+                }
+
+                .bar-wrapper {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
                     position: relative;
-                    top: 1.61rem;
+                    top: 1.52rem;
+                    left: -.08rem;
                 }
-                .bar,
-                .pro-bar {
-                    left: 15%;
-                }
-                .bar,
-                .label-soft-skill {
-                    position: relative;
-                }
+
                 .bar {
-                    width: 85%;
+                    width: 100%;
+                    height: 1.2em;
+                    border: 0.05em solid #000;
+                    background: #fff;
+                    position: relative;
                 }
+
+                .pro-bar {
+                    position: absolute;
+                    height: 1.2em;
+                    background: #000;
+                    top: 0;
+                    left: 0;
+                    animation: fluctuate 6s infinite ease-in-out;
+                    transform-origin: left;
+                }
+
                 .pro-bar.psd-pro-bar {
                     width: 70%;
-                    animation: fluctuate 2s infinite ease-in-out;
                     animation-delay: 0.1s;
                 }
                 .pro-bar.ai-pro-bar {
                     width: 64%;
-                    animation: fluctuate 2s infinite ease-in-out;
                     animation-delay: 0.3s;
                 }
                 .pro-bar.id-pro-bar {
                     width: 56%;
-                    animation: fluctuate 2s infinite ease-in-out;
                     animation-delay: 0.2s;
                 }
-
                 .pro-bar.pr-pro-bar {
                     width: 44%;
-                    animation: fluctuate 2s infinite ease-in-out;
                     animation-delay: 0.4s;
                 }
                 .pro-bar.ae-pro-bar {
                     width: 48%;
-                    animation: fluctuate 2s infinite ease-in-out;
                     animation-delay: 0.5s;
                 }
                 .pro-bar.live-pro-bar {
                     width: 52%;
-                    animation: fluctuate 2s infinite ease-in-out;
                     animation-delay: 0.6s;
                 }
+
                 .label-soft-skill {
                     width: 100%;
-                    display: block;
-                    bottom: 0.8em;
+                    margin-top: 0.4em;
                     font-size: 0.8em;
                     font-style: italic;
                     text-align: right;
@@ -276,27 +269,23 @@
             .extra-info {
                 text-align: right;
             }
-        }
 
-        @keyframes fluctuate {
-            0% {
-                transform: scaleX(1);
-            }
-
-            25% {
-                transform: scaleX(0.98);
-            }
-
-            50% {
-                transform: scaleX(1.04);
-            }
-
-            75% {
-                transform: scaleX(0.96);
-            }
-
-            100% {
-                transform: scaleX(1);
+            @keyframes fluctuate {
+                0% {
+                    transform: scaleX(1);
+                }
+                25% {
+                    transform: scaleX(0.98);
+                }
+                50% {
+                    transform: scaleX(1.04);
+                }
+                75% {
+                    transform: scaleX(0.96);
+                }
+                100% {
+                    transform: scaleX(1);
+                }
             }
         }
 
