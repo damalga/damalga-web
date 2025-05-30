@@ -12,6 +12,10 @@ html{
     }
 }
 
+.distorted {
+  filter: url(#wavy);
+}
+
 /*dat.gui*/
 .dg.ac{
     display: none;

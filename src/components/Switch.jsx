@@ -1,19 +1,36 @@
-import { useState } from 'react';
+import { useEffect } from "react";
 
-function Switch() {
-  const [isNightMode, setIsNightMode] = useState(false);
+const Switch = () => {
+  useEffect(() => {
+    const html = document.documentElement;
+    const saved = localStorage.getItem("dark-mode");
+    if (saved === "true") html.classList.add("dark-mode");
+  }, []);
 
-  const handleToggle = () => {
-    setIsNightMode((prevMode) => {
-      // Añadimos o quitamos la clase al <html>
-      if (!prevMode) {
-        document.documentElement.classList.add('night-mode');
-      } else {
-        document.documentElement.classList.remove('night-mode');
-      }
-      return !prevMode; // Actualizamos el estado
-    });
+  const handleToggle = (e) => {
+    const html = document.documentElement;
+    if (e.target.checked) {
+      html.classList.add("dark-mode");
+      localStorage.setItem("dark-mode", "true");
+    } else {
+      html.classList.remove("dark-mode");
+      localStorage.setItem("dark-mode", "false");
+    }
   };
-}
 
-export default Switch
+  return (
+    <label className="switch">
+      <svg className="moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+      <input
+        type="checkbox"
+        id="darkModeToggle"
+        onChange={handleToggle}
+        defaultChecked={localStorage.getItem("dark-mode") === "true"}
+      />
+      <span className="slider"></span>
+      <svg className="sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+    </label>
+  );
+};
+
+export default Switch;

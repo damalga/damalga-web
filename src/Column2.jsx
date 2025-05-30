@@ -54,7 +54,7 @@ function Column2() {
             </div>
             <div className="node">
               <img src={nodee} alt="node" />
-              <p className="text">Mid level in JavaScript. I'm deeply passionate about the language and always up-to-date with libraries and frameworks. Constantly exploring new ways to maximize the potential of ES6 and beyond.</p>
+              <p className="text">Mid level in JavaScript. I'm deeply passionate about the language and always up-to-date with libraries and frameworks. Constantly exploring new ways to hack the language potential.</p>
             </div>
             <div className="git">
               <img src={git} alt="git" />

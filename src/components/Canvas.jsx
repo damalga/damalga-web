@@ -333,7 +333,6 @@ function Canvas() {
                 }
             `;
 
-      // === RIPPLE PLANE ===
       const ripples = new PingPongPlane(curtains, canvasRef.current, {
         vertexShader: ripplesVs,
         fragmentShader: ripplesFs,
@@ -415,7 +414,7 @@ function Canvas() {
       window.addEventListener("mousemove", onMouseMove);
       window.addEventListener("touchmove", onMouseMove);
 
-      // === RENDER PASS ===
+      // RENDER
       const renderPassUniforms = {
         resolution: {
           name: "uResolution",
@@ -446,7 +445,7 @@ function Canvas() {
         fromTexture: ripples.getTexture(),
       });
 
-      // === GUI ===
+      // GUI
       const gui = new dat.GUI();
 
       gui
