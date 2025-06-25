@@ -1,5 +1,6 @@
 import alcarcia from "./assets/svgs/alcarcia.svg";
 import polymorphism from "./assets/svgs/polymorphism.svg";
+import nllp from "./assets/svgs/nllp.svg";
 import css from "./assets/svgs/css.svg";
 import git from "./assets/svgs/git.svg";
 import nodee from "./assets/svgs/nodee.svg";
@@ -35,13 +36,16 @@ function Column2() {
           gadget or device that makes noise.
         </p>
         <div className="polymorphism music project">
-          <img src={polymorphism} alt="polymorphism logo" />
+          <img src={nllp} alt="nllp logo" />
           <p className="bold">Damalga NL + LP<br></br>
-            <span>Newsletter and Blog</span>
+            <span>NewsLetter + Landing Page</span>
             <br></br>
             <a className="link" href="https://damalga.github.io/damalga-nl-lp/" target="_blank">Website</a>
           </p>
         </div>
+        <p className="first extra-info">
+          This is a project I started recently to consolidate ideas about technology, economy, philosophy and beyond!
+        </p>
       </div>
 
       <div className="skills topic">
