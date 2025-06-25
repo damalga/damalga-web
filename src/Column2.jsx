@@ -34,6 +34,14 @@ function Column2() {
           vinyls and I'm fascinated by synths, drum machines and basically any
           gadget or device that makes noise.
         </p>
+        <div className="polymorphism music project">
+          <img src={polymorphism} alt="polymorphism logo" />
+          <p className="bold">Damalga NL + LP<br></br>
+            <span>Newsletter and Blog</span>
+            <br></br>
+            <a className="link" href="https://damalga.github.io/damalga-nl-lp/" target="_blank">Website</a>
+          </p>
+        </div>
       </div>
 
       <div className="skills topic">
@@ -54,7 +62,7 @@ function Column2() {
             </div>
             <div className="node">
               <img src={nodee} alt="node" />
-              <p className="text">Mid level in JavaScript. I'm deeply passionate about the language and always up-to-date with libraries and frameworks. Constantly exploring new ways to hack the language potential.</p>
+              <p className="text">Mid-level in JavaScript. I keep up with modern tools and frameworks, but always come back to the elegance of web standards, vanilla Js and try to keep things dependency-free.</p>
             </div>
             <div className="git">
               <img src={git} alt="git" />
@@ -70,10 +78,10 @@ function Column2() {
             Countless front-end experiences in projects built on React, Ruby on Rails, Symfony... and CMSs like Liferay, Drupal, WordPress, and more... So, adapting to build any view or interaction with any core comes naturally to me.
             <br></br>
             <br></br>
-            I used to work with Gulp to optimize my code, but since Webpack showed up, it's been my main tool for bundling. I'm just getting started with Vite, and it's cool how fast it runs in development.
+            I used to work with Gulp to optimize my code, but since <a className="link" href="https://vite.dev/" target="_blank">Vite</a> showed up, it's been my main tool for bundling. It's cool how fast it runs in development.
             <br></br>
             <br></br>
-            Oh! and I'm definitely not bad on the terminal,<br></br>or with git. Not on Linux either!<br></br>I (don't) use Arch btw XD
+            Oh! and I’m pretty comfortable with the terminal,Git and Linux. I (don't) use Arch btw XD... Currently using Debian on one machine and Manjaro on another.
           </p>
         </div>
       </div>

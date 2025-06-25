@@ -39,6 +39,9 @@ function Column3() {
             <p className="label-soft-skill id">indesign</p>
           </div>
         </div>
+        <p className="extra-info">
+          Adobe’s not the only one in the game. I also work with <a className="link" href="https://www.figma.com" target="_blank">Figma</a>, I love it because it loads in the browser so fast and it’s easy collaborate with others.
+        </p>
         <h5>Video tools</h5>
         <div className="soft-skill">
           <img src={pr} className="prlogo" alt="premiere logo pr adobe" />
@@ -56,6 +59,9 @@ function Column3() {
             <p className="label-soft-skill ae">After Effects</p>
           </div>
         </div>
+        <p className="extra-info">
+          I often edit videos like I would with Premiere, but using <a className="link"href="https://kdenlive.org/" target="_blank">Kdenlive</a>. It’s lightweight, powerful, and open source! For post-production, I still use After Effects.
+        </p>
         <h5>Audio tools</h5>
         <div className="soft-skill">
           <img src={live} className="ablogo" alt="ableton live logo" />
@@ -66,7 +72,7 @@ function Column3() {
           </div>
         </div>
         <p className="extra-info">
-          I know this bar system might seem a bit outdated to indicate any skill... But it captures the way my skills fluctuate with my focus and each project.
+          I’ve recently dived into the world of making music through code libraries like <a className="link" href="https://strudel.cc/" target="_blank">Strudel</a>, and I feel it’s given my mind a new abstraction layer.
         </p>
       </div>
 
@@ -113,7 +119,9 @@ function Column3() {
 
       <div className="bye topic">
         <h4>BYE!</h4>
-        <p>... and have a nice <span className="opensource">(opensource)</span> day.</p>
+        <p>P.S. Follow me on <a className="link" href="https://bsky.app/profile/alcarciandamalga.bsky.social" target="_blank">(blue)sky</a> or <a className="link" href="https://reddit.com/user/alcarciandamalga/" target="_blank">(red)dit</a>.<br></br>
+          I kinda like the blue/red pill thing...<br></br>
+          Have a nice day.</p>
         <h6>Damian;</h6>
       </div>
     </section>

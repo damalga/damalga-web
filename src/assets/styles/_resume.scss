@@ -28,6 +28,7 @@
         font-style: italic;
         line-height: 1.28em;
         text-align: right;
+        margin: 0.8rem 0;
     }
 
     p {
@@ -207,17 +208,12 @@
 
                     .label-soft-skill {
                         width: 100%;
-                        margin-top: 0.4em;
+                        margin: 0.4em 0;
                         font-size: 0.8em;
                         font-style: italic;
                         text-align: right;
                     }
                 }
-
-            }
-
-            .extra-info {
-                text-align: right;
             }
 
             @keyframes fluctuate {
@@ -304,17 +300,12 @@
                 font-size: 2em;
             }
 
-            p {
-                .opensource {
-                    font-size: 0.7em;
-                }
-            }
-
             h6 {
                 text-align: right;
                 margin-bottom: 0;
                 font-style: italic;
                 line-height: 1em;
+                margin-top: 0.8em;
             }
         }
     }
