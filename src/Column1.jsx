@@ -73,7 +73,7 @@ function Column1() {
         </div>
         <div className='vocento job'>
           <img src={vocento} alt="vocento logo" />
-          <p>Front-layout developer,<br></br> <b><a className='link' href="https://www.cheil.com/es" target="_blank">Vocento</a></b>.<br></br> (2023 - present).</p>
+          <p>Front-end developer,<br></br> <b><a className='link' href="https://www.vocento.com" target="_blank">Vocento</a></b>.<br></br> (2023 - 2025).</p>
         </div>
       </div>
     </section>
