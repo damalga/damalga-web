@@ -1,6 +1,5 @@
 # damalga-website
 
-## Objetivo
 Este proyecto además de dar a ver mis capacidades como diseñador gráfico y desarrollador web. Tiene como objetivo mostrar un profundo interés en los sistemas informáticos, el software libre, la seguridad y las redes informáticas. Es por ello que existe un proyecto llamado [Hackeed](https://hackeed.es), construido con [Vue](https://vuejs.org/), una pequeña tienda online sin servidor donde comercializo equipo informático de nicho, con el que además de aprender, experimento cosas que me entusiasman muy mucho.
 
 Cabe destacar que este proyecto, es decir [Damalga](https://damalga.com) arrancó siendo un punto de partida para aprender a construir interfaces de usuario modernas con [React](https://react.dev/). Parte del ya obsoleto [create-react-app](https://create-react-app.dev/) a finales del 2022 y ha ido mutando hasta disponer de [Vite](https://vite.dev/) como empaquetador de la "aplicación" o mejor dicho, portal web, así como de pasar de una metodología basada en clases a la actual basada en funciones. Sin embargo, he de decir que a mi forma de entender como se construye el DOM, React nunca ha calado en mi psique, cosa que Vue ha hecho desde el minuto 1.
