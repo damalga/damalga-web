@@ -1,4 +1,4 @@
 # damalga-website
-Portfolio / Resume
+Portfolio / Resume / CV
 
 https://damalga.com
