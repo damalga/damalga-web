@@ -1,38 +1,44 @@
-html, body, #app {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  position: relative;
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-html{
+#app {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+html {
     &.dark-mode {
         filter: invert(1);
     }
 }
 
 .distorted {
-  filter: url(#wavy);
+    filter: url(#wavy);
 }
 
 /*dat.gui*/
-.dg.ac{
+.dg.ac {
     display: none;
 }
 #canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  pointer-events: none;
-  canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 #portfolio {
@@ -48,9 +54,7 @@ html{
     -webkit-text-size-adjust: 100%;
     padding: 1em;
     width: 1080px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    margin: 0 auto;
 }
 ::selection {
     background: $blue;
