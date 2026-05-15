@@ -20,6 +20,8 @@ function App() {
   const entranceRan   = useRef(false)
 
   useEffect(() => {
+    window.prerenderReady = false
+
     const { gsap } = window
     gsap.set(portfolioRef.current, { autoAlpha: 0 })
 
@@ -77,6 +79,7 @@ function App() {
     const { gsap } = window
 
     setLoaderDone(true)
+    window.prerenderReady = true
 
     gsap.set(['header .hello', 'header .intro'], { opacity: 0, x: (i) => i === 0 ? -40 : 40 })
     gsap.set(['header .second', '.col-1', '.col-2', '.col-3', 'footer'], { opacity: 0, y: 35 })
