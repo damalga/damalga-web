@@ -1,4 +1,11 @@
 # damalga-website
-Portfolio / Resume
 
-https://damalga.com
+Este proyecto además de dar a ver mis capacidades como diseñador gráfico y desarrollador web. Tiene como objetivo mostrar un profundo interés en los sistemas informáticos, el software libre, la seguridad y las redes informáticas. Es por ello que existe un proyecto llamado [Hackeed](https://hackeed.es), construido con [Vue](https://vuejs.org/), una pequeña tienda online sin servidor donde comercializo equipo informático de nicho, con el que además de aprender, experimento cosas que me entusiasman muy mucho.
+
+Cabe destacar que este proyecto, es decir [Damalga](https://damalga.com) arrancó siendo un punto de partida para aprender a construir interfaces de usuario modernas con [React](https://react.dev/). Parte del ya obsoleto [create-react-app](https://create-react-app.dev/) a finales del 2022 y ha ido mutando hasta disponer de [Vite](https://vite.dev/) como empaquetador de la "aplicación" o mejor dicho, portal web, así como de pasar de una metodología basada en clases a la actual basada en funciones. Sin embargo, he de decir que a mi forma de entender como se construye el DOM, React nunca ha calado en mi psique, cosa que Vue ha hecho desde el minuto 1.
+
+Por otro lado, el proyecto de [Alcarcia](https://github.com/damalga/alcarcia-web) viene a ser una "replica" de Damalga, donde muestro lo que he venido haciendo como productor de música electrónica. La web también usa React de forma simple, sin una gran lógica detrás, ambos proyectos son más bien una carta de presentación con las que te digo: Ey! si quieres llevar tu producto al navegador se como hacerlo.
+
+Además, destacar que el proyecto y sello discrográfico: [Polymorphism](https://polymorphismrecords.com) viene incluso de antes de siquiera saber nada sobre frameworks de desarrollo de interfaces de usuario modernas, es puro HTML, CSS Y Javascript, sin pretensiones. Molaría hacerlo tienda y poder "prescindir" de [Bandcamp](https://polymorphism.bandcamp.com/). Pero parece que nunca siento la determinación de ponerme con ello.
+
+Por último, indicar que me encantaría poner la principal referencia o inspiración por la cual este CV es como es, pero parece que ya no está en [Behance](https://www.behance.net/damalga). Gracias a diseñar este CV pude irme de Erasmus a Finlandia (Helsinki y Espoo) concretamente a la [Aalto University, School of Arts, Design and Architecture](https://www.aalto.fi/en/school-of-arts-design-and-architecture). Tras esta experiencia, volví a la [Escuela Superior de Diseño de Madrid](https://esdmadrid.es) para tener una asignatura de Html y Css, darme cuenta de que no tenia ni idea de esto, irme a la biblioteca a estudiarlo y alegrarme de haber encontrado mi camino.

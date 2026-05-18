@@ -3,6 +3,10 @@ a {
     cursor: none;
 }
 
+#cursor-wrapper {
+    filter: url(#wavy);
+}
+
 .cursor {
     width: var(--size);
     height: var(--size);
@@ -12,16 +16,16 @@ a {
     top: 0;
     pointer-events: none;
     z-index: 100;
-     :hover {
+    :hover {
         --size: 2em;
-        border: .05em solid $blue;
+        border: 0.05em solid $blue;
     }
     &--large {
         --size: 2em;
-        border: .05em solid $blue;
+        border: 0.05em solid $blue;
     }
     &--small {
-        --size: .5em;
+        --size: 0.5em;
         background: $blue;
         transform: translate(-50%, -50%);
     }

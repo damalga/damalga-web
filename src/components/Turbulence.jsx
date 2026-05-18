@@ -1,24 +1,49 @@
 import { useEffect, useRef } from 'react';
 
-function Turbulence() {
+function Turbulence({ settle }) {
   const turbulenceRef = useRef(null);
   const displacementRef = useRef(null);
+  const shouldSettle = useRef(false);
 
   useEffect(() => {
-    let frame = 0;
+    if (settle) shouldSettle.current = true;
+  }, [settle]);
+
+  useEffect(() => {
+    let freq = 0.012;
+    let scale = 40;
+    let settled = false;
+    let idleFrame = 0;
+    let maxFrame = 0;
+    let rafId;
+
     const animate = () => {
-      const freq = 0.0002 + 0.0008 * Math.sin(frame * 0.04);
-      if (turbulenceRef.current) {
-        turbulenceRef.current.setAttribute('baseFrequency', `${freq} ${freq}`);
+      if (!shouldSettle.current) {
+        freq  = 0.012 + 0.003 * Math.sin(maxFrame * 0.025);
+        scale = 40   + 10   * Math.sin(maxFrame * 0.02);
+        maxFrame++;
+      } else if (!settled) {
+        freq  += (0.0002 - freq)  * 0.02;
+        scale += (4     - scale) * 0.02;
+        if (Math.abs(freq - 0.0002) < 0.00005) {
+          freq  = 0.0002;
+          scale = 4;
+          settled = true;
+        }
+      } else {
+        freq  = 0.0002 + 0.0008 * Math.sin(idleFrame * 0.04);
+        scale = 4     + 2      * Math.sin(idleFrame * 0.06);
+        idleFrame++;
       }
-      if (displacementRef.current) {
-        const scale = 4 + 2 * Math.sin(frame * 0.06);
-        displacementRef.current.setAttribute('scale', scale);
-      }
-      frame++;
-      requestAnimationFrame(animate);
+
+      turbulenceRef.current?.setAttribute('baseFrequency', `${freq} ${freq}`);
+      displacementRef.current?.setAttribute('scale', scale);
+
+      rafId = requestAnimationFrame(animate);
     };
-    animate();
+
+    rafId = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(rafId);
   }, []);
 
   return (
@@ -27,7 +52,7 @@ function Turbulence() {
         <feTurbulence
           ref={turbulenceRef}
           type="turbulence"
-          baseFrequency="0.01 0.02"
+          baseFrequency="0.012 0.012"
           numOctaves="3"
           result="warp"
         />
@@ -35,7 +60,7 @@ function Turbulence() {
           ref={displacementRef}
           in="SourceGraphic"
           in2="warp"
-          scale="10"
+          scale="40"
           xChannelSelector="R"
           yChannelSelector="G"
         />
