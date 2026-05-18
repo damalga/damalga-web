@@ -60,7 +60,7 @@ function Column3() {
           </div>
         </div>
         <p className="extra-info">
-          I often edit videos like I would with Premiere, but using <a className="link"href="https://kdenlive.org/" target="_blank">Kdenlive</a>. It’s lightweight, powerful, and open source! For post-production, I still use After Effects.
+          I often edit videos like I would with Premiere, but using <a className="link"href="https://kdenlive.org/" target="_blank">Kdenlive</a>. It’s lightweight, powerful and open source! For post-production, I still use After Effects.
         </p>
         <h5>Audio tools</h5>
         <div className="soft-skill">
