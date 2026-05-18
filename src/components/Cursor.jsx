@@ -1,88 +1,54 @@
 function Cursor() {
-    
+
     const { gsap } = window;
-    
+
     const cursorOuter = document.querySelector(".cursor--large");
     const cursorInner = document.querySelector(".cursor--small");
-    let isStuck = false;
-    let mouse = {
-        x: -100,
-        y: -100,
-    };
-    
-    // Just in case you need to scroll
-    let scrollHeight = 0;
-    window.addEventListener('scroll', function(e) {
-        scrollHeight = window.scrollY
-    })
-    
+    let mouse = { x: -100, y: -100 };
+
     let cursorOuterOriginalState = {
-        width: cursorOuter.getBoundingClientRect().width,
+        width:  cursorOuter.getBoundingClientRect().width,
         height: cursorOuter.getBoundingClientRect().height,
     };
+
     const links = document.querySelectorAll(".resume a");
-    
+    const hoverSize = parseFloat(getComputedStyle(cursorOuter).fontSize) * 2.2;
+
     links.forEach((link) => {
-        link.addEventListener("pointerenter", handleMouseEnter);
-        link.addEventListener("pointerleave", handleMouseLeave);
+        link.addEventListener("pointerenter", () => {
+            gsap.to(cursorOuter, { duration: 0.2, width: hoverSize, height: hoverSize });
+        });
+        link.addEventListener("pointerleave", () => {
+            gsap.to(cursorOuter, { duration: 0.2, width: cursorOuterOriginalState.width, height: cursorOuterOriginalState.height });
+        });
     });
-    
-    document.body.addEventListener("pointermove", updateCursorPosition);
-    
+
+    document.body.addEventListener("pointermove", (e) => {
+        mouse.x = e.pageX;
+        mouse.y = e.pageY;
+    });
+
     document.body.addEventListener("pointerdown", () => {
         gsap.fromTo(cursorInner, { scale: 1 }, { scale: 2, duration: 0.15 });
     });
-    
+
     document.body.addEventListener("pointerup", () => {
         gsap.fromTo(cursorInner, { scale: 2 }, { scale: 1, duration: 0.15 });
     });
-    
-    
-    function updateCursorPosition(e) {
-        mouse.x = e.pageX;
-        mouse.y = e.pageY;
-    }
-    
+
     function updateCursor() {
-        gsap.set(cursorInner, {
-            x: mouse.x,
-            y: mouse.y,
+        gsap.set(cursorInner, { x: mouse.x, y: mouse.y });
+        const w = cursorOuter.offsetWidth;
+        const h = cursorOuter.offsetHeight;
+        gsap.to(cursorOuter, {
+            duration: 0.15,
+            x: mouse.x - w / 2,
+            y: mouse.y - h / 2,
         });
-    
-        if (!isStuck) {
-            gsap.to(cursorOuter, {
-                duration: 0.15,
-                x: mouse.x - cursorOuterOriginalState.width/2,
-                y: mouse.y - cursorOuterOriginalState.height/2,
-            });
-        }
-        
         requestAnimationFrame(updateCursor);
     }
-    
+
     updateCursor();
-    
-    // modify cursorOuter to area
-    function handleMouseEnter(e) {
-        isStuck = true;
-        const targetBox = e.currentTarget.getBoundingClientRect();
-        gsap.to(cursorOuter, 0.2, {
-            x: targetBox.left, 
-            y: targetBox.top + scrollHeight,
-            width: targetBox.width,
-            height: targetBox.height,
-            borderRadius: 0
-        });
-    }
-    
-    function handleMouseLeave(e) {
-        isStuck = false;
-        gsap.to(cursorOuter, 0.2, {
-            width: cursorOuterOriginalState.width,
-            height: cursorOuterOriginalState.width,
-            borderRadius: "50%"
-        });
-    }
 
 }
 
