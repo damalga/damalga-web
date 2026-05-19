@@ -117,6 +117,15 @@ function Column3() {
         </div>
       </div>
 
+      <div className="extra topic">
+        <h4>EXTRA</h4>
+        <div className="points">
+          <div className="extra point">
+            <p>ATS (Applicant Tracking Systems) friendly ASCII version available: <a className="link" href="damalga_ascii_cv.pdf" download>Download (.pdf)</a>.</p>
+          </div>
+        </div>
+      </div>
+
       <div className="bye topic">
         <h4>BYE!</h4>
         <p>P.S. Follow me on <a className="link" href="https://bsky.app/profile/alcarciandamalga.bsky.social" target="_blank">(blue)sky</a> or <a className="link" href="https://reddit.com/user/alcarciandamalga/" target="_blank">(red)dit</a>.<br></br>
