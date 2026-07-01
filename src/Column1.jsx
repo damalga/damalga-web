@@ -77,7 +77,16 @@ function Column1() {
         </div>
         <div className="course start">
           <p className="extra-info">
-            To finish my degree in the ESDM, I started working as a graphic designer for one of{" "}
+            To finish my degree and before presenting my{" "}
+            <a
+              className="link"
+              href="https://www.behance.net/gallery/160249463/The-Holy-Grid"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              final degree project
+            </a>
+            , I started working for one of{" "}
             <a className="link" href="https://www.caser.es/" target="_blank">
               Caser
             </a>
