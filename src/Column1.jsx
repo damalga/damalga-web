@@ -90,7 +90,7 @@ function Column1() {
             <a className="link" href="https://www.caser.es/" target="_blank">
               Caser
             </a>
-            's marketing departments for 6 months.
+            's marketing departments from Jan to Jun 2016.
           </p>
         </div>
       </div>
@@ -154,7 +154,7 @@ function Column1() {
                 GING
               </a>
             </b>{" "}
-            (ETSIT / UPM).<br></br> (Oct 2016 - Oct 2017).
+            (ETSIT / UPM).<br></br> (Sep 2016 - Jun 2017).
           </p>
         </div>
       </div>
