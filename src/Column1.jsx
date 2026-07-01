@@ -32,9 +32,7 @@ function Column1() {
           </p>
         </div>
         <div className="course start">
-          <p className="extra-info">
-            A short and focused training on shell scripting.
-          </p>
+          <p className="extra-info">A short and focused training on shell scripting.</p>
         </div>
         <div className="course school">
           <p>
@@ -45,26 +43,20 @@ function Column1() {
         </div>
         <div className="master school">
           <p>
-            <b>300h on-site course + final project</b> in web design and
-            development. Escuela CICE.<br></br>
+            <b>300h on-site course + final project</b> in web design and development. Escuela CICE.<br></br>
             [2016 -- 6 months]
           </p>
         </div>
         <div className="course start">
           <p className="extra-info">
-            These courses helped me move from design into development,
-            strengthening my understanding of web structure, code flow and
-            front-end logic.
+            These courses took me from design into development, clarifying how I think about web structure, coding and
+            especially front-end logic.
           </p>
         </div>
         <div className="erasmus school">
           <p>
             <b>Erasmus+</b> in{" "}
-            <a
-              className="link"
-              href="https://www.aalto.fi/en/school-of-arts-design-and-architecture"
-              target="_blank"
-            >
+            <a className="link" href="https://www.aalto.fi/en/school-of-arts-design-and-architecture" target="_blank">
               <b>Aalto University</b> school of arts, design and architecture
             </a>{" "}
             (Finland).
@@ -85,8 +77,7 @@ function Column1() {
         </div>
         <div className="course start">
           <p className="extra-info">
-            To finish my degree in the ESDM, I started working as a graphic
-            designer for one of{" "}
+            To finish my degree in the ESDM, I started working as a graphic designer for one of{" "}
             <a className="link" href="https://www.caser.es/" target="_blank">
               Caser
             </a>
@@ -102,11 +93,7 @@ function Column1() {
           <p>
             Front-end developer,<br></br>{" "}
             <b>
-              <a
-                className="link"
-                href="https://www.vocento.com"
-                target="_blank"
-              >
+              <a className="link" href="https://www.vocento.com" target="_blank">
                 Vocento
               </a>
             </b>
@@ -118,11 +105,7 @@ function Column1() {
           <p>
             Hybrid Designer,<br></br>{" "}
             <b>
-              <a
-                className="link"
-                href="https://www.cheil.com/es"
-                target="_blank"
-              >
+              <a className="link" href="https://www.cheil.com/es" target="_blank">
                 Cheil Spain
               </a>
             </b>
@@ -158,11 +141,7 @@ function Column1() {
           <p>
             Research scholarship,<br></br>{" "}
             <b>
-              <a
-                className="link"
-                href="https://ging.github.io/"
-                target="_blank"
-              >
+              <a className="link" href="https://ging.github.io/" target="_blank">
                 GING
               </a>
             </b>{" "}
