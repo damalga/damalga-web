@@ -1,0 +1,29 @@
+# Damalga
+
+> Systems builder and creative web coder based in Madrid, Spain. 7 years of front-end development experience with a background in graphic design. Focus on efficient, clean and maintainable systems: reusable components (Vue, React), pixel-perfect UI, careful DOM management, and hands-on comfort with GNU/Linux, self-hosting and networking.
+
+Damalga is the personal site of Damián — an acronym of his full name. The homepage is an interactive résumé covering education, work experience, projects, tools and interests. English is the site language; Spanish and English are spoken.
+
+## About
+
+- [Home](https://damalga.com): Interactive résumé and portfolio
+- [CV (ATS-friendly PDF)](https://damalga.com/damalga-cv-ats.pdf): Plain-text résumé optimized for Applicant Tracking Systems
+
+## Projects
+
+- [Hackeed](https://hackeed.es): Open tech store and living lab driven by technology, economy, philosophy and curiosity
+- [Hackeed Blog](https://hackeed.es/blog): Writing on the same themes
+- [Alcarcia](https://alcarcia.com): Electronic music artist / producer
+- [Polymorphism Records](https://polymorphismrecords.com): Electronic music record label
+
+## Elsewhere
+
+- [GitHub](https://github.com/damalga)
+- [LinkedIn](https://linkedin.com/in/damian-a-8052ba392)
+- [Behance](https://www.behance.net/damalga)
+- [Bluesky](https://bsky.app/profile/alcarciandamalga.bsky.social)
+- [Reddit](https://reddit.com/user/alcarciandamalga/)
+
+## Contact
+
+- damalga@protonmail.com
