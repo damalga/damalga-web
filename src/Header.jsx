@@ -12,13 +12,12 @@ function Header() {
         <div className="intro">
           <h2>I'M DAMALGA</h2>
           <p>
-            That's an acronym of my full name. From Madrid, Spain; Europe. I
-            come from graphic design and front-end web development, but what
-            really moves me is understanding how systems work underneath. That's
-            why I'm moving into system administration, infrastructure and
-            networking. I like building solid systems, removing the unnecessary
-            and keeping things clean. Right now I'm focused on consolidating my
-            scripting and linux administration skills.
+            That's an acronym of my full name. From Madrid, Spain; Europe. I come from a graphic design degree where I
+            discovered web development, and I've been working on it with passion for the last 7 years. What moves me is
+            building efficient, clean and maintainable systems: reusable components, especially with Vue and/or Web
+            Components. A devotion to pixel-perfect UI and solid architecture, removing the unnecessary and keeping
+            things clean. Right now I'm focused on understanding how the front interacts with the back and how the magic
+            happens on the servers.
           </p>
         </div>
       </section>

@@ -1,311 +1,315 @@
 .resume {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-    section[class^="col-"] {
-        width: 33.33%;
-        padding: 1.2em;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+  section[class^="col-"] {
+    width: 33.33%;
+    padding: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .bold,
+  .link {
+    font-weight: 600;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  .link {
+    color: $black;
+  }
+
+  .extra-info {
+    font-size: 0.8em;
+    font-style: italic;
+    line-height: 1.28em;
+    text-align: right;
+    margin: 0.2rem 0 1.2rem;
+  }
+
+  .last-extra {
+    margin-bottom: 0;
+  }
+
+  p {
+    line-height: 1.44em;
+  }
+
+  .col-1 {
+    .intro {
+      display: flex;
+      justify-content: space-between;
+      .face {
+        width: 76%;
+        margin-bottom: 1.6em;
+      }
     }
 
-    .bold,
-    .link {
+    .edu,
+    .work {
+      .school,
+      .job {
+        display: flex;
+        align-items: center;
+        margin: 1.2em 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        img {
+          width: 20%;
+          margin-right: 0.8em;
+        }
+      }
+
+      .job.info {
+        text-align: right;
+        justify-content: flex-end;
+      }
+    }
+
+    .edu {
+      margin-bottom: 1.6em;
+
+      .start {
+        text-align: right;
+      }
+    }
+  }
+
+  .col-2 {
+    flex-direction: column;
+    border-right: 0.05em solid #000;
+    border-left: 0.05em solid #000;
+
+    .skills {
+      .design-composition,
+      .systems-interfaces {
+        margin-bottom: 1.2rem;
+      }
+
+      .systems-interfaces {
+        margin-bottom: 0;
+
+        .system-interface-icons {
+          .system-interface {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+          }
+
+          img {
+            width: 20%;
+            padding-bottom: 0.8rem;
+          }
+
+          .level {
+            font-size: 1.6em;
+            text-align: center;
+            color: #444;
+            padding-top: 0.2em;
+            display: inline-block;
+
+            span {
+              font-size: 0.8em;
+            }
+          }
+
+          .text {
+            width: 80%;
+            padding: 0 0 0.4rem 1.6rem;
+          }
+        }
+      }
+    }
+
+    .projects {
+      .project {
+        display: flex;
+        align-items: center;
+        margin: 1.2rem 0;
+
+        img {
+          width: 25%;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .col-3 {
+    .soft-skills {
+      margin-bottom: 1.6rem;
+
+      .soft-skill {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1.6rem;
+
+        img {
+          width: 40px;
+          height: auto;
+          flex-shrink: 0;
+          margin-top: 0.2em;
+        }
+
+        .bar-wrapper {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          top: 1.52rem;
+          left: -0.08rem;
+          .bar {
+            width: 100%;
+            height: 1.2em;
+            border: 0.05em solid #000;
+            background: transparent;
+            position: relative;
+          }
+
+          .pro-bar {
+            position: absolute;
+            height: 1.2em;
+            background: #000;
+            top: 0;
+            left: 0;
+            animation: fluctuate 6s infinite ease-in-out;
+            transform-origin: left;
+          }
+
+          .pro-bar.psd-pro-bar {
+            width: 70%;
+            animation-delay: 0.1s;
+          }
+          .pro-bar.ai-pro-bar {
+            width: 64%;
+            animation-delay: 0.3s;
+          }
+          .pro-bar.id-pro-bar {
+            width: 56%;
+            animation-delay: 0.2s;
+          }
+          .pro-bar.pr-pro-bar {
+            width: 44%;
+            animation-delay: 0.4s;
+          }
+          .pro-bar.ae-pro-bar {
+            width: 48%;
+            animation-delay: 0.5s;
+          }
+          .pro-bar.live-pro-bar {
+            width: 52%;
+            animation-delay: 0.6s;
+          }
+
+          .label-soft-skill {
+            width: 100%;
+            margin: 0.4em 0;
+            font-size: 0.8em;
+            font-style: italic;
+            text-align: right;
+          }
+        }
+      }
+
+      @keyframes fluctuate {
+        0% {
+          transform: scaleX(1);
+        }
+        25% {
+          transform: scaleX(0.98);
+        }
+        50% {
+          transform: scaleX(1.04);
+        }
+        75% {
+          transform: scaleX(0.96);
+        }
+        100% {
+          transform: scaleX(1);
+        }
+      }
+    }
+
+    .interests,
+    .contact,
+    .extra,
+    .langs {
+      margin-bottom: 1.6rem;
+    }
+
+    .langs {
+      .level {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
         font-weight: 600;
 
+        label,
         span {
-            font-weight: 400;
+          display: block;
         }
+
+        span {
+          font-weight: 500;
+          font-size: 0.8em;
+          line-height: 1.2em;
+          margin-top: 0.3em;
+        }
+      }
     }
 
-    .link {
-        color: $black;
+    .interests {
+      .points {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .interest {
+          text-align: center;
+
+          img {
+            width: 48px;
+          }
+
+          p {
+            font-size: 0.8em;
+            line-height: 1.2em;
+          }
+        }
+      }
     }
 
-    .extra-info {
-        font-size: 0.8em;
-        font-style: italic;
-        line-height: 1.28em;
+    .contact {
+      .points {
+        .point {
+          margin-bottom: 0.8em;
+
+          p {
+            line-height: 1em;
+          }
+        }
+      }
+    }
+
+    .bye {
+      h4 {
+        font-size: 2em;
+      }
+
+      h6 {
         text-align: right;
-        margin: 0.2rem 0 1.2rem;
+        margin-bottom: 0;
+        font-style: italic;
+        line-height: 1em;
+        margin-top: 0.8em;
+      }
     }
-
-    p {
-        line-height: 1.44em;
-    }
-
-    .col-1 {
-        .intro {
-            display: flex;
-            justify-content: space-between;
-            .face {
-                width: 76%;
-                margin-bottom: 1.6em;
-            }
-        }
-
-        .edu,
-        .work {
-            .school,
-            .job {
-                display: flex;
-                align-items: center;
-                margin: 1.2em 0;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-
-                img {
-                    width: 20%;
-                    margin-right: 0.8em;
-                }
-            }
-
-            .job.info {
-                text-align: right;
-                justify-content: flex-end;
-            }
-        }
-
-        .edu {
-            margin-bottom: 1.6em;
-
-            .start {
-                text-align: right;
-            }
-        }
-    }
-
-    .col-2 {
-        flex-direction: column;
-        border-right: 0.05em solid #000;
-        border-left: 0.05em solid #000;
-
-        .skills {
-            .design-composition,
-            .systems-interfaces {
-                margin-bottom: 1.2rem;
-            }
-
-            .systems-interfaces {
-                margin-bottom: 0;
-
-                .system-interface-icons {
-                    .system-interface {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: flex-end;
-                    }
-
-                    img {
-                        width: 20%;
-                        padding-bottom: 0.8rem;
-                    }
-
-                    .level {
-                        font-size: 1.6em;
-                        text-align: center;
-                        color: #444;
-                        padding-top: 0.2em;
-                        display: inline-block;
-
-                        span {
-                            font-size: 0.8em;
-                        }
-                    }
-
-                    .text {
-                        width: 80%;
-                        padding: 0 0 0.4rem 1.6rem;
-                    }
-                }
-            }
-        }
-
-        .projects {
-            .project {
-                display: flex;
-                align-items: center;
-                margin: 1.2rem 0;
-
-                img {
-                    width: 25%;
-                    margin-right: 0.8rem;
-                }
-            }
-        }
-    }
-
-    .col-3 {
-        .soft-skills {
-            margin-bottom: 1.6rem;
-
-            .soft-skill {
-                display: flex;
-                align-items: flex-start;
-                margin-bottom: 1.6rem;
-
-                img {
-                    width: 40px;
-                    height: auto;
-                    flex-shrink: 0;
-                    margin-top: 0.2em;
-                }
-
-                .bar-wrapper {
-                    flex: 1;
-                    display: flex;
-                    flex-direction: column;
-                    position: relative;
-                    top: 1.52rem;
-                    left: -0.08rem;
-                    .bar {
-                        width: 100%;
-                        height: 1.2em;
-                        border: 0.05em solid #000;
-                        background: transparent;
-                        position: relative;
-                    }
-
-                    .pro-bar {
-                        position: absolute;
-                        height: 1.2em;
-                        background: #000;
-                        top: 0;
-                        left: 0;
-                        animation: fluctuate 6s infinite ease-in-out;
-                        transform-origin: left;
-                    }
-
-                    .pro-bar.psd-pro-bar {
-                        width: 70%;
-                        animation-delay: 0.1s;
-                    }
-                    .pro-bar.ai-pro-bar {
-                        width: 64%;
-                        animation-delay: 0.3s;
-                    }
-                    .pro-bar.id-pro-bar {
-                        width: 56%;
-                        animation-delay: 0.2s;
-                    }
-                    .pro-bar.pr-pro-bar {
-                        width: 44%;
-                        animation-delay: 0.4s;
-                    }
-                    .pro-bar.ae-pro-bar {
-                        width: 48%;
-                        animation-delay: 0.5s;
-                    }
-                    .pro-bar.live-pro-bar {
-                        width: 52%;
-                        animation-delay: 0.6s;
-                    }
-
-                    .label-soft-skill {
-                        width: 100%;
-                        margin: 0.4em 0;
-                        font-size: 0.8em;
-                        font-style: italic;
-                        text-align: right;
-                    }
-                }
-            }
-
-            @keyframes fluctuate {
-                0% {
-                    transform: scaleX(1);
-                }
-                25% {
-                    transform: scaleX(0.98);
-                }
-                50% {
-                    transform: scaleX(1.04);
-                }
-                75% {
-                    transform: scaleX(0.96);
-                }
-                100% {
-                    transform: scaleX(1);
-                }
-            }
-        }
-
-        .interests,
-        .contact,
-        .extra,
-        .langs {
-            margin-bottom: 1.6rem;
-        }
-
-        .langs {
-            .level {
-                display: flex;
-                justify-content: space-around;
-                text-align: center;
-                font-weight: 600;
-
-                label,
-                span {
-                    display: block;
-                }
-
-                span {
-                    font-weight: 500;
-                    font-size: 0.8em;
-                    line-height: 1.2em;
-                    margin-top: 0.3em;
-                }
-            }
-        }
-
-        .interests {
-            .points {
-                display: flex;
-                align-items: flex-end;
-                justify-content: space-between;
-
-                .interest {
-                    text-align: center;
-
-                    img {
-                        width: 48px;
-                    }
-
-                    p {
-                        font-size: 0.8em;
-                        line-height: 1.2em;
-                    }
-                }
-            }
-        }
-
-        .contact {
-            .points {
-                .point {
-                    margin-bottom: 0.8em;
-
-                    p {
-                        line-height: 1em;
-                    }
-                }
-            }
-        }
-
-        .bye {
-            h4 {
-                font-size: 2em;
-            }
-
-            h6 {
-                text-align: right;
-                margin-bottom: 0;
-                font-style: italic;
-                line-height: 1em;
-                margin-top: 0.8em;
-            }
-        }
-    }
+  }
 }
