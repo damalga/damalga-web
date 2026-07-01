@@ -1,41 +1,41 @@
 header {
-    padding: 0 1.2rem 1.2rem;
-    div {
-        padding: 1.2em;
+  padding: 0 1.2rem 1.2rem;
+  div {
+    padding: 1.2em;
+  }
+  section.first {
+    margin-bottom: 2em;
+    .hello,
+    .intro {
+      display: inline-block;
     }
-    section.first {
-        margin-bottom: 2em;
-        .hello,
-        .intro {
-            display: inline-block;
-        }
-        .hello {
-            width: 33.33%;
-            vertical-align: bottom;
-            h1 {
-                margin-bottom: 0;
-            }
-        }
-        .intro {
-            width: 66.66%;
-            border-left: 0.05em solid $black;
-            p {
-                font-size: 0.96em;
-                line-height: 1.56em;
-            }
-        }
+    .hello {
+      width: 33.33%;
+      vertical-align: text-bottom;
+      h1 {
+        margin-bottom: 0;
+      }
     }
+    .intro {
+      width: 66.66%;
+      border-left: 0.05em solid $black;
+      p {
+        font-size: 0.96em;
+        line-height: 1.56em;
+      }
+    }
+  }
 }
 
 section.second {
-    .name {
-        margin: 1em 0;
-        text-align-last: justify;
-        border-top: 0.05em solid #000;
-        border-bottom: 0.05em solid #000;
-        h3 {
-            font-size: large;
-            margin-bottom: 0;
-        }
+  .name {
+    margin: 1em 0;
+    text-align-last: justify;
+    border-top: 0.05em solid #000;
+    border-bottom: 0.05em solid #000;
+    h3 {
+      font-size: large;
+      margin-bottom: 0;
     }
+  }
 }

@@ -28,7 +28,7 @@ function Column1() {
               Universidad Carlos III
             </a>{" "}
             (Madrid)<br></br>
-            [2025 - 1 month]
+            (Oct 2025)
           </p>
         </div>
         <div className="course start">
@@ -38,13 +38,13 @@ function Column1() {
           <p>
             <b>50h on-site course</b> in Javascript.<br></br>
             Asociación Española de <br></br>Programadores Informáticos<br></br>
-            [2019 - 2 months]
+            (Sep 2019 - Oct 2019)
           </p>
         </div>
         <div className="master school">
           <p>
             <b>300h on-site course + final project</b> in web design and development. Escuela CICE.<br></br>
-            [2016 -- 6 months]
+            (Oct 2016 - Jun 2017)
           </p>
         </div>
         <div className="course start">
@@ -60,7 +60,7 @@ function Column1() {
               <b>Aalto University</b> school of arts, design and architecture
             </a>{" "}
             (Finland).
-            <br></br> [2015 -- 5 months (1st semester)]
+            <br></br> (Aug 2015 - Dec 2015)
           </p>
         </div>
         <div className="degree school">
@@ -72,7 +72,7 @@ function Column1() {
               </a>
             </b>{" "}
             (ESDM).<br></br>
-            [2012 --- 2017]
+            (Sep 2012 - Jun 2017)
           </p>
         </div>
         <div className="course start">
@@ -97,7 +97,7 @@ function Column1() {
                 Vocento
               </a>
             </b>
-            .<br></br> (2023 - 2025).
+            .<br></br> (Mar 2023 - Jan 2026).
           </p>
         </div>
         <div className="cheil job">
@@ -109,7 +109,7 @@ function Column1() {
                 Cheil Spain
               </a>
             </b>
-            .<br></br> (2020 - 2022).
+            .<br></br> (Jan 2020 - Dec 2022).
           </p>
         </div>
         <div className="amaris job">
@@ -121,7 +121,7 @@ function Column1() {
                 Amaris
               </a>
             </b>
-            .<br></br> (2018 - 6 months).
+            .<br></br> (Jun 2018 - Dec 2018).
           </p>
         </div>
         <div className="nateevo job">
@@ -133,7 +133,7 @@ function Column1() {
                 Nateevo
               </a>
             </b>{" "}
-            (Vass Group).<br></br> (2018 - 5 months).
+            (Vass Group).<br></br> (Jan 2018 - Jun 2018).
           </p>
         </div>
         <div className="ging job">
@@ -145,7 +145,7 @@ function Column1() {
                 GING
               </a>
             </b>{" "}
-            (ETSIT / UPM).<br></br> (2016 - 2017).
+            (ETSIT / UPM).<br></br> (Oct 2016 - Oct 2017).
           </p>
         </div>
       </div>

@@ -121,7 +121,7 @@ function Column3() {
         <h4>EXTRA</h4>
         <div className="points">
           <div className="extra point">
-            <p>ATS (Applicant Tracking Systems) friendly ASCII version available: <a className="link" href="damalga_ascii_cv.pdf" download>Download (.pdf)</a>.</p>
+            <p>ATS (Applicant Tracking Systems) friendly ASCII version available: <a className="link" href="damalga-cv-ats.pdf" download>Download (.pdf)</a>.</p>
           </div>
         </div>
       </div>
