@@ -1,80 +1,88 @@
 @media only screen and (max-width: 1024px) {
-    #portfolio {
-        width: 100%;
-    }
+  #portfolio {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-    .cursor {
-        visibility: hidden;
+  .cursor {
+    visibility: hidden;
+  }
+  #portfolio {
+    header,
+    section[class^="col-"] {
+      padding: 0.6em;
     }
-    #portfolio {
-        header,
-        section[class^='col-'] {
-            padding: .6em;
+    //rwd-header
+    header {
+      section.first {
+        margin-bottom: 0;
+        .hello,
+        .intro {
+          width: 100%;
         }
-        //rwd-header
-        header {
-            section.first {
-                margin-bottom: 0;
-                .hello,
-                .intro {
-                    width: 100%;
-                }
-                .hello {
-                    padding: 0 4.8em 2.4em;
-                }
-                .intro {
-                    border-top: .05em solid $black;
-                    border-left: 0;
-                    padding: 2em 1em;
-                }
-            }
-            section.second {
-                .name {
-                    margin: 0;
-                    text-align-last: center;
-                    text-align: center;
-                }
-            }
+        .hello {
+          padding: 0 4.8em 2.4em;
         }
-        //rwd-resume
-        .resume {
-            section[class^=col-] {
-                width: 100%;
-            }
-            .col-1 {
-                .face {
-                    width: 80%;
-                }
-                .work{
-                    margin-bottom: 1.6rem;
-                }
-            }
-            .col-2 {
-                border: 0;
-                .projects,
-                .skills{
-                    margin-bottom: 1.6rem;
-                }
-            }
-            .col-3 {
-                .topic {
-                    .level,
-                    .points {
-                        justify-content: space-around;
-                    }
-                }
-                
-            }
+        .intro {
+          border-top: 0.05em solid $black;
+          border-left: 0;
+          padding: 2em 1em;
         }
+      }
+      section.second {
+        .name {
+          margin: 0;
+          text-align-last: center;
+          text-align: center;
+        }
+      }
     }
+    //rwd-resume
+    .resume {
+      section[class^="col-"] {
+        width: 100%;
+      }
+      .col-1 {
+        .face {
+          width: 80%;
+        }
+        .work {
+          margin-bottom: 1.6rem;
+        }
+      }
+      .col-2 {
+        border: 0;
+        .projects,
+        .skills {
+          margin-bottom: 1.6rem;
+        }
+      }
+      .col-3 {
+        .topic {
+          .level,
+          .points {
+            justify-content: space-around;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 560px) {
-    footer {
-        .bye {
-            text-align-last: center;
+  #portfolio {
+    header {
+      section.first {
+        .hello {
+          padding: 0 2.8em 1.2em;
         }
+      }
     }
+    footer {
+      .bye {
+        text-align-last: center;
+      }
+    }
+  }
 }
