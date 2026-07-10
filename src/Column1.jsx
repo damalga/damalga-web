@@ -121,6 +121,24 @@ function Column1() {
             .<br></br> (Jan 2020 - Dec 2022).
           </p>
         </div>
+        <div className="job start">
+          <p className="extra-info">
+            * Career gap to develop the{" "}
+            <a
+              className="link"
+              href="#polymorphism"
+              onClick={(e) => {
+                if (window.lenis) {
+                  e.preventDefault();
+                  window.lenis.scrollTo("#polymorphism", { offset: -20 });
+                }
+              }}
+            >
+              Polymorphism Records
+            </a>
+            .
+          </p>
+        </div>
         <div className="amaris job">
           <img src={amaris} alt="amaris logo" />
           <p>

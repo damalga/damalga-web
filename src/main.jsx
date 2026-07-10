@@ -10,6 +10,11 @@ import Loader from './components/Loader'
 import Header from './Header'
 import Resume from './Resume'
 import Footer from './Footer'
+import Alcarcia from './pages/Alcarcia'
+import Polymorphism from './pages/Polymorphism'
+import Hackeed from './pages/Hackeed'
+import MeowRawr from './pages/MeowRawr'
+import { useLocation } from './router'
 
 import './assets/styles/base.scss'
 
@@ -18,6 +23,7 @@ function App() {
   const [settle, setSettle]         = useState(false)
   const portfolioRef  = useRef(null)
   const entranceRan   = useRef(false)
+  const path = useLocation()
 
   useEffect(() => {
     window.prerenderReady = false
@@ -26,6 +32,7 @@ function App() {
     gsap.set(portfolioRef.current, { autoAlpha: 0 })
 
     const lenis = new Lenis({ lerp: 0.1 })
+    window.lenis = lenis
     let rafId
     function raf(time) {
       lenis.raf(time)
@@ -36,6 +43,7 @@ function App() {
     return () => {
       cancelAnimationFrame(rafId)
       lenis.destroy()
+      delete window.lenis
     }
   }, [])
 
@@ -107,6 +115,10 @@ function App() {
         <Resume />
         <Footer />
       </div>
+      {path === '/alcarcia' && <Alcarcia />}
+      {path === '/polymorphism' && <Polymorphism />}
+      {path === '/hackeed' && <Hackeed />}
+      {path === '/meowrawr' && <MeowRawr />}
     </>
   )
 }

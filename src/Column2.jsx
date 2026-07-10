@@ -2,10 +2,12 @@ import nllp from "./assets/svgs/nllp.svg";
 import alcarcia from "./assets/svgs/alcarcia.svg";
 import polymorphism from "./assets/svgs/polymorphism.svg";
 import hackeed from "./assets/svgs/hackeed.svg";
+import meowrawr from "./assets/svgs/meowrawr.svg";
 import css from "./assets/svgs/css.svg";
 import git from "./assets/svgs/git.svg";
 import bash from "./assets/svgs/bash.svg";
 import nodee from "./assets/svgs/nodee.svg";
+import { Link } from "./router";
 
 function Column2() {
   return (
@@ -20,10 +22,14 @@ function Column2() {
             <br></br>
             <a className="link" href="https://www.alcarcia.com" target="_blank">
               Website
-            </a>
+            </a>{" "}
+            ·{" "}
+            <Link className="link" to="/alcarcia">
+              About
+            </Link>
           </p>
         </div>
-        <div className="polymorphism music project">
+        <div id="polymorphism" className="polymorphism music project">
           <img src={polymorphism} alt="polymorphism logo" />
           <p className="bold">
             Polymorphism Records <br></br>
@@ -31,7 +37,11 @@ function Column2() {
             <br></br>
             <a className="link" href="https://www.polymorphismrecords.com" target="_blank">
               Website
-            </a>
+            </a>{" "}
+            ·{" "}
+            <Link className="link" to="/polymorphism">
+              About
+            </Link>
           </p>
         </div>
         <p className="first extra-info">
@@ -48,13 +58,31 @@ function Column2() {
               Website
             </a>{" "}
             ·{" "}
-            <a className="link" href="https://hackeed.es/blog" target="_blank">
-              Blog
-            </a>
+            <Link className="link" to="/hackeed">
+              About
+            </Link>
           </p>
         </div>
         <p className="first extra-info">
           Open tech store and living lab driven by technology, economy, philosophy and curiosity.
+        </p>
+        <div className="meowrawr project">
+          <img src={meowrawr} alt="meowrawr logo" />
+          <p className="bold">
+            MeowRawr<br></br>
+            <span>Feline wiki</span>
+            <br></br>
+            <a className="link" href="https://meowrawr.com" target="_blank">
+              Website
+            </a>{" "}
+            ·{" "}
+            <Link className="link" to="/meowrawr">
+              About
+            </Link>
+          </p>
+        </div>
+        <p className="extra-info">
+          A feline wiki and a self-hosting experiment. 2 loves in 1 place: Cats and a Raspberry Pi serving a website.
         </p>
       </div>
 

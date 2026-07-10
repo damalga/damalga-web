@@ -1,65 +1,65 @@
 html,
 body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #app {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 html {
-    &.dark-mode {
-        filter: invert(1);
-    }
+  &.dark-mode {
+    filter: invert(1);
+  }
 }
 
 .distorted {
-    filter: url(#wavy);
+  filter: url(#wavy);
 }
 
 /*dat.gui*/
 .dg.ac {
-    display: none;
+  display: none;
 }
 #canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    pointer-events: none;
-    canvas {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 #portfolio {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    color-scheme: light dark;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-    padding: 1em;
-    width: 1080px;
-    margin: 0 auto;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  padding: 1em;
+  width: 1080px;
+  margin: 0 auto;
 }
 ::selection {
-    background: $blue;
-    color: $white;
+  background: $blue;
+  color: $white;
 }
 b {
-    font-weight: 600;
+  font-weight: 600;
 }
