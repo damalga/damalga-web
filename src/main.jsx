@@ -24,6 +24,20 @@ function App() {
   const portfolioRef  = useRef(null)
   const entranceRan   = useRef(false)
   const path = useLocation()
+  const matomoReady   = useRef(false)
+
+  useEffect(() => {
+    if (!matomoReady.current) {
+      matomoReady.current = true
+      return
+    }
+    setTimeout(() => {
+      if (!window._paq) return
+      window._paq.push(['setCustomUrl', window.location.origin + path])
+      window._paq.push(['setDocumentTitle', document.title])
+      window._paq.push(['trackPageView'])
+    }, 0)
+  }, [path])
 
   useEffect(() => {
     window.prerenderReady = false
