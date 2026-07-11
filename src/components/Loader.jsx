@@ -33,7 +33,7 @@ function Loader({ onComplete, onSettle }) {
   }, [])
 
   return (
-    <div ref={overlayRef} id="loader" className="distorted">
+    <div ref={overlayRef} id="loader" className="turbulence">
       <div className="loader__name-wrap">
         <div ref={nameRef} className="loader__name">
           WHO AM I ?

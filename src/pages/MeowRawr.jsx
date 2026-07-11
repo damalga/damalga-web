@@ -22,7 +22,7 @@ function MeowRawr() {
 
   return (
     <div className="modal-overlay" onClick={() => navigate("/")}>
-      <article className="modal-content" onClick={(e) => e.stopPropagation()}>
+      <article className="modal-content turbulence" onClick={(e) => e.stopPropagation()}>
         <button type="button" className="modal-close" onClick={() => navigate("/")} aria-label="Close">
           ×
         </button>
