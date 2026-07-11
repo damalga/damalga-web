@@ -109,7 +109,7 @@ function App() {
       <Canvas />
       <Cursor />
       <Turbulence settle={settle} />
-      <div ref={portfolioRef} id="portfolio" className="distorted">
+      <div ref={portfolioRef} id="portfolio" className="turbulence">
         <Cursor />
         <Header />
         <Resume />
