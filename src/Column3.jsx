@@ -40,7 +40,11 @@ function Column3() {
           </div>
         </div>
         <p className="extra-info">
-          Adobe’s not the only one in the game. I also work with <a className="link" href="https://www.figma.com" target="_blank">Figma</a>, I love it because it loads in the browser so fast and it’s easy collaborate with others.
+          Adobe’s not the only one in the game. I also work with{" "}
+          <a className="link" href="https://www.figma.com" target="_blank">
+            Figma
+          </a>
+          , I love it because it loads in the browser so fast and it’s easy collaborate with others.
         </p>
         <h5>Video tools</h5>
         <div className="soft-skill">
@@ -60,7 +64,11 @@ function Column3() {
           </div>
         </div>
         <p className="extra-info">
-          I often edit videos like I would with Premiere, but using <a className="link"href="https://kdenlive.org/" target="_blank">Kdenlive</a>. It’s lightweight, powerful and open source! For post-production, I still use After Effects.
+          I often edit videos like I would with Premiere, but using{" "}
+          <a className="link" href="https://kdenlive.org/" target="_blank">
+            Kdenlive
+          </a>
+          . It’s lightweight, powerful and open source! For post-production, I still use After Effects.
         </p>
         <h5>Audio tools</h5>
         <div className="soft-skill">
@@ -72,7 +80,11 @@ function Column3() {
           </div>
         </div>
         <p className="extra-info">
-          I’ve recently dived into the world of making music through code libraries like <a className="link" href="https://strudel.cc/" target="_blank">Strudel</a>, and I feel it’s given my mind a new abstraction layer.
+          I’ve recently dived into the world of making music through code libraries like{" "}
+          <a className="link" href="https://strudel.cc/" target="_blank">
+            Strudel
+          </a>
+          , and I feel it’s given my mind a new abstraction layer.
         </p>
       </div>
 
@@ -93,16 +105,21 @@ function Column3() {
         <h4>INTERESTS</h4>
         <div className="points">
           <div className="mus-film interest">
-            <img src={int1} className="int1" alt="music, films and digital arts"/>
-            <p>Music, cinema<br></br>& digital arts</p>
+            <img src={int1} className="int1" alt="music, films and digital arts" />
+            <p>
+              Music, cinema<br></br>& digital arts
+            </p>
           </div>
           <div className="sci-tec interest">
-            <img src={int2} className="int2" alt="science, nature and technology"/>
-            <p>Science, Nature<br></br>& Technology</p>
+            <img src={int2} className="int2" alt="science, nature and technology" />
+            <p>
+              Science, Nature<br></br>& Technology
+            </p>
           </div>
           <div className="trips-narr interest">
-            <img src={int3} className="int3" alt="trips, vehicles and narratives"/>
-            <p>Trips, vehicles<br></br>& narratives
+            <img src={int3} className="int3" alt="trips, vehicles and narratives" />
+            <p>
+              Trips, vehicles<br></br>& narratives
             </p>
           </div>
         </div>
@@ -112,7 +129,9 @@ function Column3() {
         <h4>CONTACT</h4>
         <div className="points">
           <div className="email point">
-            <p><b>Email:</b> damalga@protonmail.com</p>
+            <p>
+              <b>Email:</b> damalga@protonmail.com
+            </p>
           </div>
         </div>
       </div>
@@ -121,16 +140,35 @@ function Column3() {
         <h4>EXTRA</h4>
         <div className="points">
           <div className="extra point">
-            <p>ATS (Applicant Tracking Systems) friendly version available: <a className="link" href="damalga-cv-ats.pdf" download>Download (.pdf)</a>.</p>
+            <p>
+              ATS (Applicant Tracking Systems) friendly version available in{" "}
+              <a className="link" href="damalga-cv-ats-es.pdf" download>
+                spanish
+              </a>{" "}
+              and/or{" "}
+              <a className="link" href="damalga-cv-ats-en.pdf" download>
+                english
+              </a>
+              .
+            </p>
           </div>
         </div>
       </div>
 
       <div className="bye topic">
         <h4>BYE!</h4>
-        <p>P.S. Follow me on <a className="link" href="https://bsky.app/profile/alcarciandamalga.bsky.social" target="_blank">(blue)sky</a> or <a className="link" href="https://reddit.com/user/alcarciandamalga/" target="_blank">(red)dit</a>.<br></br>
-          I kinda like the blue/red pill thing...<br></br>
-          Have a nice day.</p>
+        <p>
+          P.S. Follow me on{" "}
+          <a className="link" href="https://bsky.app/profile/alcarciandamalga.bsky.social" target="_blank">
+            (blue)sky
+          </a>{" "}
+          or{" "}
+          <a className="link" href="https://reddit.com/user/alcarciandamalga/" target="_blank">
+            (red)dit
+          </a>
+          .<br></br>I kinda like the blue/red pill thing...<br></br>
+          Have a nice day.
+        </p>
         <h6>Damian;</h6>
       </div>
     </section>
