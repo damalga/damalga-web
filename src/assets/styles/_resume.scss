@@ -122,7 +122,7 @@
 
           .text {
             width: 80%;
-            padding: 0 0 0.4rem 1.6rem;
+            padding: 0 0 0.4rem 1.2rem;
           }
         }
       }
@@ -242,6 +242,17 @@
     .extra,
     .langs {
       margin-bottom: 1.6rem;
+    }
+
+    .extra{
+      .point{
+        display: flex;
+        gap: .6rem;
+        margin-bottom: .6rem;
+        img{
+          width: 22%;
+        }
+      }
     }
 
     .langs {
