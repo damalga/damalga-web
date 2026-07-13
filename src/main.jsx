@@ -27,6 +27,11 @@ function App() {
   const matomoReady   = useRef(false)
 
   useEffect(() => {
+    const isSafari = /^((?!chrome|android|crios|fxios|edg).)*safari/i.test(navigator.userAgent)
+    if (isSafari) document.documentElement.classList.add('safari')
+  }, [])
+
+  useEffect(() => {
     if (!matomoReady.current) {
       matomoReady.current = true
       return
