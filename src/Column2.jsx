@@ -72,7 +72,7 @@ function Column2() {
             MeowRawr<br></br>
             <span>Feline wiki</span>
             <br></br>
-            <a className="link" href="https://meowrawr.com" target="_blank">
+            <a className="link" href="https://meowrawr.org" target="_blank">
               Website
             </a>{" "}
             ·{" "}
