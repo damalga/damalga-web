@@ -17,7 +17,15 @@ function Turbulence({ settle }) {
     let maxFrame = 0;
     let rafId;
 
+    const isSafari = /^((?!chrome|android|crios|fxios|edg).)*safari/i.test(navigator.userAgent);
+    const skip = isSafari ? 3 : 2;
+    let tick = 0;
     const animate = () => {
+      if (tick++ % skip !== 0) {
+        rafId = requestAnimationFrame(animate);
+        return;
+      }
+
       if (!shouldSettle.current) {
         freq  = 0.012 + 0.003 * Math.sin(maxFrame * 0.025);
         scale = 40   + 10   * Math.sin(maxFrame * 0.02);
@@ -48,12 +56,12 @@ function Turbulence({ settle }) {
 
   return (
     <svg style={{ display: 'none' }}>
-      <filter id="wavy">
+      <filter id="wavy" x="-25%" y="-25%" width="150%" height="150%">
         <feTurbulence
           ref={turbulenceRef}
           type="turbulence"
           baseFrequency="0.012 0.012"
-          numOctaves="3"
+          numOctaves="2"
           result="warp"
         />
         <feDisplacementMap
