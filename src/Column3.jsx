@@ -7,6 +7,7 @@ import live from "./assets/svgs/live.svg";
 import int1 from "./assets/svgs/int1.svg";
 import int2 from "./assets/svgs/int2.svg";
 import int3 from "./assets/svgs/int3.svg";
+import ecmslv from "./assets/svgs/ecmslv.svg";
 
 function Column3() {
   return (
@@ -139,19 +140,15 @@ function Column3() {
       <div className="extra topic">
         <h4>EXTRA</h4>
         <div className="points">
-          <div className="extra point">
+          <div className="point">
             <p>
-              ATS (Applicant Tracking Systems) friendly version available in{" "}
-              <a className="link" href="damalga-cv-ats-es.pdf" download>
-                spanish
-              </a>{" "}
-              and/or{" "}
-              <a className="link" href="damalga-cv-ats-en.pdf" download>
-                english
-              </a>
-              .
+              <a href="https://youtu.be/pKDBHSzBMug?si=XlsoVv7qvNOeJiKH" className="link">El caballo me salvó la vida</a>: Audiovisual piece about a guy who doesn't know what he's doing but does it anyway.
             </p>
+            <img src={ecmslv} alt="el caballo me salvó la vida" />
           </div>
+            <p className="extra-info">
+              About Basketball, Jokic, horses and record labels. Code, road and bottom-shelf barstool philosophy. This is a Roadtrip from Madrid to as far as one could get and one day will.
+            </p>
         </div>
       </div>
 
