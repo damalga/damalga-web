@@ -125,18 +125,7 @@ function Column3() {
           </div>
         </div>
       </div>
-
-      <div className="contact topic">
-        <h4>CONTACT</h4>
-        <div className="points">
-          <div className="email point">
-            <p>
-              <b>Email:</b> damalga@protonmail.com
-            </p>
-          </div>
-        </div>
-      </div>
-
+      
       <div className="extra topic">
         <h4>EXTRA</h4>
         <div className="points">
@@ -151,6 +140,18 @@ function Column3() {
             </p>
         </div>
       </div>
+
+      <div className="contact topic">
+        <h4>CONTACT</h4>
+        <div className="points">
+          <div className="email point">
+            <p>
+              <b>Email:</b> damalga@protonmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+
 
       <div className="bye topic">
         <h4>BYE!</h4>
