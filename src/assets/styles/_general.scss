@@ -26,6 +26,7 @@ html {
 }
 
 html.safari .turbulence {
+  filter: none;
   will-change: auto;
   contain: none;
 }

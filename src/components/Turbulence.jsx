@@ -10,6 +10,9 @@ function Turbulence({ settle }) {
   }, [settle]);
 
   useEffect(() => {
+    const isSafari = /^((?!chrome|android|crios|fxios|edg).)*safari/i.test(navigator.userAgent);
+    if (isSafari) return;
+
     let freq = 0.012;
     let scale = 40;
     let settled = false;
@@ -17,8 +20,7 @@ function Turbulence({ settle }) {
     let maxFrame = 0;
     let rafId;
 
-    const isSafari = /^((?!chrome|android|crios|fxios|edg).)*safari/i.test(navigator.userAgent);
-    const skip = isSafari ? 3 : 2;
+    const skip = 2;
     let tick = 0;
     const animate = () => {
       if (tick++ % skip !== 0) {
