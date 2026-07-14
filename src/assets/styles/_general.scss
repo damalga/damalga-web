@@ -63,6 +63,8 @@ html.safari .turbulence {
   padding: 1em;
   width: 1080px;
   margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
 }
 ::selection {
   background: $blue;
