@@ -7,7 +7,6 @@ Damalga is the personal site of Damián — an acronym of his full name. The hom
 ## About
 
 - [Home](https://damalga.com): Interactive résumé and portfolio
-- [CV (ATS-friendly PDF)](https://damalga.com/damalga-cv-ats.pdf): Plain-text résumé optimized for Applicant Tracking Systems
 
 ## Projects
 

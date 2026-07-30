@@ -1,12 +1,11 @@
 import { useEffect, useRef } from 'react'
+import gsap from 'gsap'
 
 function Loader({ onComplete, onSettle }) {
   const overlayRef = useRef(null)
   const nameRef    = useRef(null)
 
   useEffect(() => {
-    const { gsap } = window
-
     const tl = gsap.timeline({ onComplete })
 
     tl.to(nameRef.current, {
