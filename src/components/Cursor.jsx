@@ -1,6 +1,6 @@
-function Cursor() {
+import gsap from 'gsap'
 
-    const { gsap } = window;
+function Cursor() {
 
     const cursorOuter = document.querySelector(".cursor--large");
     const cursorInner = document.querySelector(".cursor--small");

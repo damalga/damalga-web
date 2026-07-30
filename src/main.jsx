@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import ReactDOM from 'react-dom/client'
 import Lenis from '@studio-freight/lenis'
+import gsap from 'gsap'
 
 import Cursor from './components/Cursor'
 import Canvas from './components/Canvas'
@@ -47,7 +48,6 @@ function App() {
   useEffect(() => {
     window.prerenderReady = false
 
-    const { gsap } = window
     gsap.set(portfolioRef.current, { autoAlpha: 0 })
 
     const lenis = new Lenis({ lerp: 0.1 })
@@ -67,7 +67,6 @@ function App() {
   }, [])
 
   useEffect(() => {
-    const { gsap } = window
     const portfolio = portfolioRef.current
 
     const onMove = (e) => {
@@ -102,8 +101,6 @@ function App() {
   function handleLoaderComplete() {
     if (entranceRan.current) return
     entranceRan.current = true
-
-    const { gsap } = window
 
     setLoaderDone(true)
     window.prerenderReady = true
