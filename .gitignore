@@ -105,3 +105,10 @@ dist
 
 # GEO audit output (local only)
 GEO-AUDIT-REPORT.md
+
+# AI editor / agent rules (local only)
+.clinerules/
+.cursor/
+.opencode/
+.windsurf/
+AGENTS.md
