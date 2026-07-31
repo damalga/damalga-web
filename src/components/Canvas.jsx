@@ -4,7 +4,7 @@ import {
   Vec2,
   PingPongPlane,
   ShaderPass,
-} from "https://cdn.jsdelivr.net/npm/curtainsjs@8.1.2/src/index.mjs";
+} from "curtainsjs";
 import * as dat from "dat.gui";
 
 function Canvas() {
