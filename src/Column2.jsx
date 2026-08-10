@@ -1,8 +1,8 @@
-import nllp from "./assets/svgs/nllp.svg";
 import alcarcia from "./assets/svgs/alcarcia.svg";
 import polymorphism from "./assets/svgs/polymorphism.svg";
 import hackeed from "./assets/svgs/hackeed.svg";
 import meowrawr from "./assets/svgs/meowrawr.svg";
+import homelab from "./assets/svgs/homelab.svg";
 import css from "./assets/svgs/css.svg";
 import git from "./assets/svgs/git.svg";
 import bash from "./assets/svgs/bash.svg";
@@ -84,6 +84,20 @@ function Column2() {
         <p className="extra-info">
           A feline wiki and a self-hosting experiment. 2 loves in 1 place: Cats and a Raspberry Pi serving a website.
         </p>
+        <div className="homelab project">
+          <img src={homelab} alt="homelab logo" />
+          <p className="bold">
+            Homelab<br></br>
+            <span>Personal infrastructure</span>
+            <br></br>
+            <Link className="link" to="/homelab">
+              Description
+            </Link>
+          </p>
+        </div>
+        <p className="extra-info">
+          A handful of machines, each with its own name, running the services I use every day. Prologue, three chapters and an epilogue.
+        </p>
       </div>
 
       <div className="skills topic">
@@ -99,7 +113,7 @@ function Column2() {
             for some of my favorite projects from my visual journey.
           </p>
         </div>
-        <div class="systems-interfaces">
+        <div className="systems-interfaces">
           <div className="system-interface-icons">
             <div className="system-interface css">
               <img src={css} alt="css scss bootstrap" />

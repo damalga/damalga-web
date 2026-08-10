@@ -15,6 +15,7 @@ import Alcarcia from './pages/Alcarcia'
 import Polymorphism from './pages/Polymorphism'
 import Hackeed from './pages/Hackeed'
 import MeowRawr from './pages/MeowRawr'
+import Homelab from './pages/Homelab'
 import { useLocation } from './router'
 
 import './assets/styles/base.scss'
@@ -135,6 +136,7 @@ function App() {
       {path === '/polymorphism' && <Polymorphism />}
       {path === '/hackeed' && <Hackeed />}
       {path === '/meowrawr' && <MeowRawr />}
+      {path === '/homelab' && <Homelab />}
     </>
   )
 }

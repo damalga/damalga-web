@@ -21,7 +21,7 @@ function Hackeed() {
   }, []);
 
   return (
-    <div className="modal-overlay" onClick={() => navigate("/")}>
+    <div className="modal-overlay" data-lenis-prevent onClick={() => navigate("/")}>
       <article className="modal-content turbulence" onClick={(e) => e.stopPropagation()}>
         <button type="button" className="modal-close" onClick={() => navigate("/")} aria-label="Close">
           ×

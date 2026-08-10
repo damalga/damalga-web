@@ -1,4 +1,4 @@
-@use 'color' as *;
+@use "color" as *;
 
 .resume {
   display: flex;
@@ -46,8 +46,8 @@
       display: flex;
       justify-content: space-between;
       .face {
-        width: 76%;
-        margin-bottom: 1.6em;
+        width: 84%;
+        margin-bottom: 0.8em;
       }
     }
 
@@ -246,12 +246,12 @@
       margin-bottom: 1.6rem;
     }
 
-    .extra{
-      .point{
+    .extra {
+      .point {
         display: flex;
-        gap: .6rem;
-        margin-bottom: .6rem;
-        img{
+        gap: 0.6rem;
+        margin-bottom: 0.6rem;
+        img {
           width: 24%;
           min-width: 60px;
         }
