@@ -113,7 +113,7 @@ function Column2() {
             for some of my favorite projects from my visual journey.
           </p>
         </div>
-        <div class="systems-interfaces">
+        <div className="systems-interfaces">
           <div className="system-interface-icons">
             <div className="system-interface css">
               <img src={css} alt="css scss bootstrap" />

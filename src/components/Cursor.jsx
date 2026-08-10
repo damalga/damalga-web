@@ -11,16 +11,17 @@ function Cursor() {
         height: cursorOuter.getBoundingClientRect().height,
     };
 
-    const links = document.querySelectorAll(".resume a");
     const hoverSize = parseFloat(getComputedStyle(cursorOuter).fontSize) * 2.2;
 
-    links.forEach((link) => {
-        link.addEventListener("pointerenter", () => {
+    document.addEventListener("pointerover", (e) => {
+        if (e.target.closest("a, summary, .modal-close")) {
             gsap.to(cursorOuter, { duration: 0.2, width: hoverSize, height: hoverSize });
-        });
-        link.addEventListener("pointerleave", () => {
+        }
+    });
+    document.addEventListener("pointerout", (e) => {
+        if (e.target.closest("a, summary, .modal-close")) {
             gsap.to(cursorOuter, { duration: 0.2, width: cursorOuterOriginalState.width, height: cursorOuterOriginalState.height });
-        });
+        }
     });
 
     document.body.addEventListener("pointermove", (e) => {

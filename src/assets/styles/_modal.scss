@@ -10,7 +10,7 @@
   padding: 4.8em 1.2em;
   background: rgba(0, 0, 0, 0.72);
   overflow-y: auto;
-  cursor: pointer;
+  cursor: none;
 }
 
 .modal-content {
@@ -20,7 +20,7 @@
   max-width: 1080px;
   padding: 2.4em;
   line-height: 1.24em;
-  cursor: default;
+  cursor: none;
 
   h1 {
     font-size: 1.6em;
@@ -79,7 +79,7 @@
   }
 
   > summary {
-    cursor: pointer;
+    cursor: none;
     font-weight: 700;
     list-style: none;
     padding: 0.2em 0;
@@ -118,7 +118,7 @@
   border: none;
   font-size: 1.6em;
   line-height: 1;
-  cursor: pointer;
+  cursor: none;
 }
 
 

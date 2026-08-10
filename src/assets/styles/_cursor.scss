@@ -7,6 +7,9 @@ a {
 
 #cursor-wrapper {
     filter: url(#wavy);
+    position: relative;
+    z-index: 10000;
+    pointer-events: none;
 }
 
 .cursor {
@@ -17,7 +20,7 @@ a {
     left: 0;
     top: 0;
     pointer-events: none;
-    z-index: 100;
+    z-index: 10000;
     :hover {
         --size: 2em;
         border: 0.05em solid $blue;
