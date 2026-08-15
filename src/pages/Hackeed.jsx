@@ -78,6 +78,15 @@ function Hackeed() {
               <a href="https://hackeed.es/contact" target="_blank" rel="noopener noreferrer" title="Contact Hackeed">
                 get in touch
               </a>
+              . Or just follow us in:{" "}
+              <a
+                href="https://www.instagram.com/hackeed.es/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Hackeed instagram"
+              >
+                instagram
+              </a>
               .
             </p>
           </div>

@@ -1,4 +1,4 @@
-@use 'color' as *;
+@use "color" as *;
 
 .modal-overlay {
   position: fixed;
@@ -121,22 +121,24 @@
   cursor: none;
 }
 
-
 @media only screen and (max-width: 768px) {
   .modal-body {
     flex-direction: column;
-  }
 
-  .modal-image {
-    flex-basis: auto;
-    width: 60%;
-    max-width: 320px;
-    margin: 0 auto;
-
-    img {
+    .modal-text,
+    .modal-image {
       width: 100%;
-      height: auto;
-      display: block;
+      max-width: none;
+    }
+    .modal-image {
+      flex-basis: auto;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
     }
   }
 }
