@@ -1,13 +1,13 @@
-import alcarcia from "./assets/svgs/alcarcia.svg";
-import polymorphism from "./assets/svgs/polymorphism.svg";
-import hackeed from "./assets/svgs/hackeed.svg";
-import meowrawr from "./assets/svgs/meowrawr.svg";
-import homelab from "./assets/svgs/homelab.svg";
-import css from "./assets/svgs/css.svg";
-import git from "./assets/svgs/git.svg";
-import bash from "./assets/svgs/bash.svg";
-import nodee from "./assets/svgs/nodee.svg";
-import { Link } from "./router";
+import alcarcia from "../assets/svgs/alcarcia.svg";
+import polymorphism from "../assets/svgs/polymorphism.svg";
+import hackeed from "../assets/svgs/hackeed.svg";
+import meowrawr from "../assets/svgs/meowrawr.svg";
+import homelab from "../assets/svgs/homelab.svg";
+import css from "../assets/svgs/css.svg";
+import git from "../assets/svgs/git.svg";
+import bash from "../assets/svgs/bash.svg";
+import nodee from "../assets/svgs/nodee.svg";
+import { Link } from "../router";
 
 function Column2() {
   return (
@@ -96,7 +96,8 @@ function Column2() {
           </p>
         </div>
         <p className="extra-info">
-          A handful of machines, each with its own name, running the services I use every day. Prologue, three chapters and an epilogue.
+          A handful of machines, each with its own name, running the services I use every day. Prologue, three chapters
+          and an epilogue.
         </p>
       </div>
 

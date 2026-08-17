@@ -1,4 +1,4 @@
-import hello from "./assets/svgs/hello.svg";
+import hello from "../assets/svgs/hello.svg";
 
 function Header() {
   return (
@@ -6,9 +6,7 @@ function Header() {
       <section className="first">
         <div className="hello">
           <h1>
-            <span className="visually-hidden">
-              Damalga — Visual Designer and Web Developer, Madrid
-            </span>
+            <span className="visually-hidden">Damalga — Visual Designer and Web Developer, Madrid</span>
             <img src={hello} alt="" aria-hidden="true" />
           </h1>
         </div>

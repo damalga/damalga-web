@@ -1,10 +1,10 @@
-import face from "./assets/svgs/face.svg";
-import vocento from "./assets/svgs/vocento.svg";
-import cheil from "./assets/svgs/cheil.svg";
-import amaris from "./assets/svgs/amaris.svg";
-import nateevo from "./assets/svgs/nateevo.svg";
-import ging from "./assets/svgs/ging.svg";
-import Switch from "./components/Switch";
+import face from "../assets/svgs/face.svg";
+import vocento from "../assets/svgs/vocento.svg";
+import cheil from "../assets/svgs/cheil.svg";
+import amaris from "../assets/svgs/amaris.svg";
+import nateevo from "../assets/svgs/nateevo.svg";
+import ging from "../assets/svgs/ging.svg";
+import Switch from "./Switch";
 
 function Column1() {
   return (
